@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialista en Bases de Datos | Portafolio Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -110,6 +111,7 @@
             padding: 1.5rem;
             box-shadow: var(--shadow);
             transition: transform 0.3s ease;
+            text-align: center;
         }
         
         .tech-card:hover {
@@ -134,16 +136,21 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
         }
         
         .project-img {
-            height: 200px;
-            background-color: #ddd;
+            height: 180px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary-color);
-            font-size: 1.5rem;
+            color: white;
+            font-size: 3rem;
         }
         
         .project-content {
@@ -179,6 +186,23 @@
             margin-top: 1rem;
         }
         
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+        
         @media (max-width: 768px) {
             .tech-grid, .projects-grid {
                 grid-template-columns: 1fr;
@@ -196,8 +220,8 @@
     <header>
         <div class="container">
             <div class="profile">
-                <div class="avatar">DB</div>
-                <h1>Angel Ruiz</h1>
+                <div class="avatar"><i class="fas fa-database"></i></div>
+                <h1>Angel Alan Ruiz Lopez</h1>
                 <p>Especialista Senior en Bases de Datos y Soporte Técnico</p>
             </div>
         </div>
@@ -218,22 +242,22 @@
             <h2>Tecnologías y Lenguajes</h2>
             <div class="tech-grid">
                 <div class="tech-card">
-                    <div class="tech-icon">SQL</div>
+                    <div class="tech-icon"><i class="fas fa-database"></i></div>
                     <h3>SQL Server</h3>
                     <p>Especializado en administración, optimización de consultas, implementación de stored procedures y diseño de esquemas de bases de datos empresariales.</p>
                 </div>
                 <div class="tech-card">
-                    <div class="tech-icon">MySQL</div>
+                    <div class="tech-icon"><i class="fas fa-database"></i></div>
                     <h3>MySQL</h3>
                     <p>Experiencia en configuración de clusters de alta disponibilidad, replicación de datos y optimización del rendimiento para aplicaciones web.</p>
                 </div>
                 <div class="tech-card">
-                    <div class="tech-icon">Mongo</div>
+                    <div class="tech-icon"><i class="fas fa-database"></i></div>
                     <h3>MongoDB</h3>
                     <p>Desarrollo de soluciones NoSQL para big data, implementación de agregaciones complejas y diseño de esquemas flexibles para aplicaciones modernas.</p>
                 </div>
                 <div class="tech-card">
-                    <div class="tech-icon">FB</div>
+                    <div class="tech-icon"><i class="fas fa-cloud"></i></div>
                     <h3>Firebase</h3>
                     <p>Implementación de bases de datos en tiempo real, autenticación de usuarios y servicios cloud para aplicaciones móviles y web.</p>
                 </div>
@@ -246,22 +270,22 @@
             <h2>Proyectos Realizados</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">Sistema de Analytics</div>
+                    <div class="project-img"><i class="fas fa-chart-line"></i></div>
                     <div class="project-content">
-                        <h3>Base de Datos para maquina expendedora</h3>
-                        <p> Diseñamos e implentamos una base de datos utilizando MongoDB para una maquina expendedora la cual guardaba los productos que mas se compran y los que menos recabando asi informacion para el dueño.</p>
+                        <h3>Plataforma de Analytics</h3>
+                        <p>Trabaje en un programa para implentar Power BI en la base de datos usada por la empresa para poder sacar estadisticas de cada edificio y departamento del trabajo.</p>
                         <div class="project-tags">
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Excel </span>
                             <span class="tag">Power BI</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">.....</div>
+                    <div class="project-img"><i class="fas fa-shopping-cart"></i></div>
                     <div class="project-content">
-                        <h3>....</h3>
-                        <p>.....</p>
+                        <h3>Sistema de Base de Datos</h3>
+                        <p>Implementamos una base de datos en un prototipo de maquina expendedora para recabar datos de cuanta es la gente que compra ciertos productos, cuales son los que venden mas y cuales menos.</p>
                         <div class="project-tags">
                             <span class="tag">MySQL</span>
                             <span class="tag">Redis</span>
@@ -270,14 +294,38 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">......</div>
+                    <div class="project-img"><i class="fas fa-mobile-alt"></i></div>
                     <div class="project-content">
-                        <h3>.......</h3>
-                        <p>......</p>
+                        <h3>Base de Datos para App Movil</h3>
+                        <p>Desarrollé la estructura de datos en Firebase para una aplicación de delivery con gran capacidad de usuarios, implementando seguridad robusta y sincronización en tiempo real para seguimiento de pedidos.</p>
                         <div class="project-tags">
                             <span class="tag">Firebase</span>
                             <span class="tag">Firestore</span>
                             <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"><i class="fas fa-hospital"></i></div>
+                    <div class="project-content">
+                        <h3>Sistema de Historial Médico Digital</h3>
+                        <p>Diseñé una base de datos segura para un sistema de registros médicos, implementando encriptación y controles de acceso para proteger información sensible.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Seguridad</span>
+                            <span class="tag">Medico</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"><i ></i></div>
+                    <div class="project-content">
+                        <h3>Gestor de Tareas</h3>
+                        <p>Implementos un gestor de tareas para poder guardar nuestras tareas pendientes y asi saber que es lo que nos falta por hacer, usando como base de datos firebase</p>
+                        <div class="project-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
                         </div>
                     </div>
                 </div>
@@ -290,9 +338,14 @@
             <h2>Contacto</h2>
             <p>¿Interesado en trabajar juntos en tu próximo proyecto de bases de datos?</p>
             <div class="contact-info">
-                <p>📧 angelrl2005@outlook.com</p>
-                <p>📱 +52 8133840564</p>
-                <p>🔗 linkedin.com/in/angel-ruiz-6613b02b2/</p>
+                <p><i class="fas fa-envelope"></i> angelrl2005@outlook.com</p>
+                <p><i class="fas fa-phone"></i> +52 8133840564</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nuevo Leon, Mexico</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
